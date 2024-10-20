@@ -7,7 +7,7 @@ I then cleaned up the code and committed this repo so that it can serve as inspi
 1. Manually select all from the pdf and copy-paste it to a text file.
 `CONTRACT_MF_LA_01_03_2024_MF_FINAL.pdf  -> doctors_all.txt`
 
-2. Automatically convert from txt to csv, because the copy-paste directly to Excel doesn't work the way I'd like (doesn't generate a table, but a list of strings). Use group_lines_as_csv_rows.
+2. Automatically convert from txt to csv, because the copy-paste directly to Excel doesn't work the way I'd like (doesn't generate a table, but a list of strings). Run group_lines_as_csv_rows.py.
 `doctors_all.txt                         -> doctors_all.csv`
 
 3. Manually load the csv in an Excel file, filter which ones I care about (the ones in the city of Alba Iulia) and tweak the address field where necessary.
@@ -17,7 +17,7 @@ csv file (all doctors)                  -> Excel (doctors in Alba Iulia)
 4. Manually save the sheet with the processed data to a csv.
 `doctors_all.xlsx                        -> doctors_alba_iulia.csv`
 
-5. Automatically compute the distances from the start address to each of the addresses in the csv.
+5. Automatically compute the distances from the start address to each of the addresses in the csv. Run main.py.
 `doctors_alba_iulia.csv                  -> doctors_alba_iulia_distances.csv`
 
 6. Manually load the csv in an Excel file, sort by distance and further filter and check details about each doctor.
